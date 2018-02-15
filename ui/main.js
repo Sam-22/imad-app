@@ -5,8 +5,8 @@ var element = document.getElementById('main-text');
 element.innerHTML = "New text"; 
 
 //Move the element
-var image = document.getElementById('img');
+var img = document.getElementById('img');
 
-image.onclick = function(){
+img.onclick = function(){
   img.style.marginleft = '100px';  
 };
