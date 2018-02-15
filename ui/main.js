@@ -8,5 +8,5 @@ element.innerHTML = "New text";
 var img = document.getElementById('img');
 
 img.onclick = function(){
-  img.style.marginleft = '100px';  
+    var interval = setInterval(moveRight, 100);  
 };
