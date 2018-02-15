@@ -9,7 +9,7 @@ button.onclick = function(){
     
     //Capture the response and store it in a variable
     req.onreadystatechange = function(){
-      if(req.readystate === XMLHttpReques.DONE){
+      if(req.readystate === XMLHttpRequest.DONE){
           if(req.status === 200){
               //Do some action
               var counter = req.responseText;
