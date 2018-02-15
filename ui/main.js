@@ -7,6 +7,6 @@ element.innerHTML = "New text";
 //Move the element
 var image = document.getElementById('img');
 
-element.onclick = function(){
+image.onclick = function(){
   image.style.marginleft = '100px';  
 };
