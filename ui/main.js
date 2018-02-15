@@ -8,5 +8,5 @@ element.innerHTML = "New text";
 var image = document.getElementById('img');
 
 image.onclick = function(){
-  image.style.marginleft = '100px';  
+  img.style.marginleft = '100px';  
 };
