@@ -1,9 +1,26 @@
 //counter code
 var button = document.getElementById('counter');
-var counter = 0;
+
 
 button.onclick = function(){
-  counter = counter+1;
-  var span = document.getElementById('count');
-  span.innerHTML = counter.toString();
+    
+    //Create a request object
+    var req = new XMLHttpRequest();
+    
+    //Capture the response and store it in a variable
+    req.onreadystatechange = function(){
+      if(req.readystate === XMLHttpReques.DONE){
+          if(req.status === 200){
+              //Do some action
+              var counter = req.responseText;
+              var span = document.getElementById('count');
+              span.innerHTML = counter.toString();
+          }
+      }  
+    };
+    //Make the request
+    req.open('GET', 'http://samsameera36.imad.hasura-app.io/counter', true);
+    res.send(null);
+   
+    
 };
