@@ -19,8 +19,8 @@ button.onclick = function(){
       }  
     };
     //Make the request
-    req.open('GET', 'http://samsameera36.imad.hasura-app.io/counter', true);
-    res.send(null);
+    req.open('GET', 'http://samsameera36.imad.hasura-app.io/', true);
+    req.send(null);
    
     
 };
